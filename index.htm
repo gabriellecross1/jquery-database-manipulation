@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- meta content -->
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8" http-equiv="encoding">
+
+  		<!-- bootstrap stylesheet -->
+ 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<!-- custom stylesheet -->
+		<link rel="stylesheet" type="text/css" href="assets/styles/stylesheet.css">
+		<!-- title -->
+		<title>jQuery & Data Sources</title>
+	</head>
+	<body>
+		<!-- heading -->
+		<div class='container'>
+			<div id="header" class="my-2 p-2 border rounded">
+			<h3>jQuery & Data Sources</h3>
+		</div> 
+		
+		<!-- data -->
+		<div id="data-source" class="my-2 p-2 border rounded">
+			<!-- heading -->
+			<h3>Data Source</h3> 
+			<select id="data-source-select" class="custom-select">
+				<option value="" selected disabled hidden>Please select a data source</option> 
+				<option value="xml">XML Files</option> 
+				<option value="database">Database Tables</option> 
+			</select>
+		</div> 
+
+		<!-- data set -->
+		<div id="data-set" class="my-2 p-2 border rounded">
+				<!-- heading -->
+				<h3>Data Set</h3>
+				<!-- select element to display all available data sets -->
+				<select id="data-set-select" class="custom-select"></select>
+			</div> 
+
+			<!-- data presentation -->
+			<div id="data-presentation" class="my-2 p-2 border rounded">
+					
+				<!-- data presentation search -->
+				<div id="data-presentation-search">
+					<!-- heading -->
+					<h6>Search</h6>
+				</div>
+				<!-- data presentation display -->
+				<div id="data-presentation-display">
+					<!-- heading -->
+					<h6>Table</h6>
+				</div>
+				<!-- data presentation insert -->
+				<div id="data-presentation-insert">
+					<!-- heading -->
+					<h6>Insert</h6>
+				</div>
+			</div> 
+		</div>
+
+		<!-- error -->
+		<div id="error">
+			<!-- error modal -->
+			<div id="error-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Error Message" aria-hidden="true">
+	  			<div class="modal-dialog modal-dialog-centered" role="document">
+	    			<div class="modal-content">
+	      				<div id="error-modal-header" class="modal-header">
+	        				<h5 id="error-modal-title" class="modal-title">Error</h5>
+	        				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          					<span aria-hidden="true">&times;</span>
+	        				</button>
+	      				</div>
+	      				<div id="error-modal-body" class="modal-body"></div>
+	      				<div id="error-modal-footer" class="modal-footer">
+	        				<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+	      				</div>
+	    			</div>
+	  			</div>
+			</div>
+		</div>
+
+
+		<footer class = "container">
+			<div class="footer-copyright text-center py-3 my-2 p-2 border rounded">&#169;2019 Copyright:
+   		 		<p>Gabrielle Cross</p>
+  			</div>
+		</footer> 
+
+		<!-- jQuery script -->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+   		<!-- bootstrap scripts -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<!-- custom script --> 
+		<script type="text/javascript" src="assets/scripts/custom.js"></script> 
+	</body>
+</html>
